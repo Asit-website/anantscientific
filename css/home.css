@@ -418,7 +418,7 @@ footer{
 }
 .another-footer{
     background: #222222;
-    padding: 20px 0px;
+    padding: 20px 50px;
 }
 .another-footer p{
     text-align: center;
@@ -427,24 +427,415 @@ footer{
 }
 .services{
     padding: 60px 50px;
+    background-color: #e3f6f6;
 }
 
 .services h2{
     font-size: 30px;
     text-align: center;
+    font-weight: bold;
 }
 
 .services .hr-line{
-
     width: 180px;
     display: block;
     margin: auto;
-   border: 1.5px solid crimson;
+   border-bottom: 2px solid crimson;
+   max-width: 100%;
 }
 
-.services p{
+.services .first-service-para{
     font-size: 16px;
     margin: 20px 0px;
    text-align: center;
    line-height: 22px;
 }
+.building{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.first-building{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #222222;
+    width: 280px;
+    max-width: 100%;
+    height: 80px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 0 3px;
+}
+.first-building:hover{
+    background-color: #fae425;
+    transition: 0.5s;
+    transform: skew(10deg);
+}
+.first-building:hover.first-building p{
+    color: black;
+}
+.first-building p{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.first-building span{
+    color: crimson;
+    font-size: 22px;
+}
+
+.second-building{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #222222;
+    width: 280px;
+    max-width: 100%;
+    height: 80px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 0 3px;
+}
+.second-building:hover{
+    background-color: #fae425;
+    transition: 0.5s;
+    transform: skew(10deg);
+}
+.second-building:hover.second-building p{
+    color: black;
+}
+.second-building p{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.second-building span{
+    color: crimson;
+    font-size: 22px;
+}
+.third-building{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #222222;
+    width: 280px;
+    max-width: 100%;
+    height: 80px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 0 3px;
+}
+
+.third-building:hover{
+    background-color: #fae425;
+    transition: 0.5s;
+    transform: skew(10deg);
+}
+.third-building:hover.third-building p{
+    color: black;
+}
+.third-building p{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.third-building span{
+    color: crimson;
+    font-size: 22px;
+}
+.suilding{
+    margin-top: 30px;
+}
+
+.diagram{
+    padding: 60px 50px;
+}
+.diagram h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.diagram .hr-line{
+    width: 130px;
+    display: block;
+    max-width: 100%;
+    margin: auto;
+   border-bottom: 2px solid crimson;
+}
+.diagram-logo img{
+    display: block;
+    margin: auto;
+   max-width: 1000px;
+   width: 100%;
+}
+.container{
+    padding: 60px 100px;
+    /* background-color: #f2f2f2; */
+    background-image: url('../img/background1.jpg'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.container h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+.container p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+.container .hr-line{
+    border-bottom: 2px solid crimson ;
+    width: 150px;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+form{
+    margin-top: 50px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 16px;
+  }
+
+  input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(47, 32, 62);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+   width: 200px;
+   max-width: 100%;
+   font-size: 16px;
+  }
+  input:focus{
+    outline: none;
+  }
+  textarea:focus{
+    outline: none;
+    resize: none;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(83, 41, 125);
+    transition: 0.5s;
+  }
+  .twiters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width:773px) {
+     .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+     }
+     .second-nav{
+        margin-top: 20px;
+     }
+     .third-nav{
+        margin-top: 20px;
+     }
+     .head{
+        display: none;
+        padding: 12px 20px;
+     }
+     .home-section{
+        padding: 60px 20px;
+     }
+     .about-section{
+        padding: 60px 20px;
+     }
+     .services{
+        padding: 60px 20px;
+     }
+     .diagram{
+        padding: 60px 20px;
+     }
+     .container{
+        padding: 60px 20px;
+     }
+     .another-footer{
+        padding: 20px 20px;
+     }
+     footer{
+        padding: 60px 20px; 
+        flex-direction: column;
+        align-items: center;
+     }
+     .foot-img img{
+        display: block;
+        margin: auto;
+     }
+     .card-section{
+        flex-direction: column;
+     }
+
+     .card-section .card{
+        margin: 10px 0px;
+     }
+     .first-footer .yog{
+        /* width: 100%; */
+        text-align: center;
+        line-height: 22px;
+    }
+    .map-location{
+        flex-direction: column;
+    }
+    .map-location p{
+        text-align: center;
+    }
+    .second-footer{
+        margin-top: 20px;
+        text-align: center;
+    }
+     .third-footer{
+        text-align: center;
+     }
+     .second-things{
+        display: none;
+     }
+  }
+
+  @media only screen and (max-width:885px){
+    .building{
+        flex-direction: column;
+    }
+    .first-building{
+        width: 380px;
+        max-width: 100%;
+    }
+    .second-building{
+        width: 380px;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .third-building{
+        width: 380px;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+  }
+
+  @media only screen and (max-width:450px){
+    .first-nav p{
+        font-size: 14px;
+    }
+    .first-nav span{
+        width: 28px;
+        height: 28px;
+    }
+    .first-nav i{
+        font-size: 10px;
+    }
+    .second-nav p{
+        font-size: 14px;
+    }
+    .second-nav span{
+        width: 28px;
+        height: 28px;
+    }
+    .second-nav i{
+        font-size: 10px;
+    }
+    .third-nav p{
+       font-size: 14px;
+    }
+    .third-nav span{
+        width: 28px;
+        height: 28px;
+    }
+    .third-nav i{
+        font-size: 10px;
+    }
+    .home-section .home-heading{
+        font-size: 25px;
+    }
+    .home-section .home-para{
+        font-size: 16px;
+        width: 100%;
+    }
+    .services h2{
+        font-size: 25px;
+    }
+    .services .hr-line{
+        width: 150px;
+    }
+    .diagram h2{
+      font-size: 25px;
+    }
+    .diagram .hr-line{
+        width: 110px;
+    }
+    .container h2{
+        font-size: 25px;
+    }
+    .container .hr-line{
+        width: 135px;
+    }
+    .container p{
+        font-size: 16px;
+    }
+    .first-footer .yog{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .map-location p{
+      font-size: 14px;
+    }
+    .another-footer p{
+        font-size: 12px;
+    }
+    .first-building p{
+        font-size: 14px;
+    }
+    .second-building p{
+        font-size: 14px;
+    }
+    .third-building p{
+        font-size: 14px;
+    }
+  }
+ 

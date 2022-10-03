@@ -9,6 +9,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="stylesheet" href="css/home.css">
 </head>
+
+<style>
+   .mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  display: none;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 16px;
+  top: 15px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  /* background-color: #04AA6D; */
+  background-color: white;
+  color: white;
+}
+.mobile-logo{
+   width: 50px;
+    height: 50px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 50px;
+
+}
+
+@media only screen and (max-width:773px){
+   .topnav{
+      display: block;
+   }
+}
+</style>
+
 <body>
      <nav class="navbar">
         <div class="first-nav">
@@ -40,6 +104,20 @@
            </ul>
          </div>
      </header>
+     <div class="topnav">
+      <a href="#home" class="active"><img class="mobile-logo" src="img/anantlogo.jpg" alt=""></a>
+      <div id="myLinks">
+        <a href="#news">Home</a>
+        <a href="#contact">About us</a>
+        <a href="#about">Services</a>
+        <a href="#about">Diagram</a>
+        <a href="#about">Contact us</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
 
      <div class="home-section">
         <h2 class="home-heading animate__animated animate__zoomIn animate__infinite infinite ">Welcome to our website!!!!</h2>
@@ -80,11 +158,115 @@
             <h2>Our Services</h2>
             <div class="hr-line"></div>
             <div class="service-para">
-                <p>We at Anent Scientific Research & Advanced Technology Lab strive to pursue Academic Research & Prototype development in the fields of neurotechnologies & Cognitive Science with researchers from all over the country.</p>
-                <p>The development process largely depends on the funding & Incentives by various stake holders as it is a very expensive and rigorous exercise.</p>
+                <p class="first-service-para">We at Anent Scientific Research & Advanced Technology Lab strive to pursue Academic Research & Prototype development in the fields of neurotechnologies & Cognitive Science with researchers from all over the country.</p>
+                <p class="first-service-para">The development process largely depends on the funding & Incentives by various stake holders as it is a very expensive and rigorous exercise.</p>
             </div>
+
+            <div class="building">
+                <div class="first-building">
+                   <span><i class="fa-solid fa-building"></i></span>
+                   <p>Cognitive Vision</p>
+                </div>
+                <div class="second-building">
+                  <span><i class="fa-solid fa-wrench"></i></span>
+                  <p>Bi-directional Brain <br> Control Interfaces</p>
+                </div>
+                <div class="third-building">
+                  <span><i class="fa-solid fa-building-columns"></i></span>
+                     <p>Computational <br> Imagination</p>
+                </div>
+            </div>
+            <div class="building suilding">
+               <div class="first-building">
+                  <span><i class="fa-solid fa-paintbrush"></i></span>
+                  <p>Computational Memory</p>
+               </div>
+               <div class="second-building">
+                 <span><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                 <p>Visuo-Spatial Modeling</p>
+               </div>
+               <div class="third-building">
+                 <span><i class="fa-solid fa-bullhorn"></i></span>
+                    <p>Computational mental <br> Imagery</p>
+               </div>
+           </div>
            
+           <div class="building suilding">
+            <div class="first-building">
+               <span><i class="fa-solid fa-bullhorn"></i></span>
+               <p>Bi-directional Multi- <br> Modal Brain Control <br> Interfaces</p>
+            </div>
+            <div class="second-building">
+              <span><i class="fa-solid fa-bullhorn"></i></span>
+              <p>Face Recognition System</p>
+            </div>
+            <div class="third-building">
+              <span><i class="fa-solid fa-bullhorn"></i></span>
+                 <p>Gait recognition system</p>
+            </div>
+        </div>
+
+        <div class="building suilding">
+         <div class="first-building">
+            <span><i class="fa-solid fa-bullhorn"></i></span>
+            <p>Speech recognition system</p>
          </div>
+         <div class="second-building">
+           <span><i class="fa-solid fa-bullhorn"></i></span>
+           <p>Emotion recognition system</p>
+         </div>
+         <div class="third-building">
+           <span><i class="fa-solid fa-bullhorn"></i></span>
+              <p>Handwriting recognition <br> system using Cognitive <br> Vision</p>
+         </div>
+     </div>
+
+     <div class="building suilding">
+      <div class="first-building">
+         <span><i class="fa-solid fa-bullhorn"></i></span>
+         <p>Emotional state modeling <br> using computational <br> neuromodulation</p>
+      </div>
+      <div style="visibility:hidden;" class="second-building second-things">
+        <span><i class="fa-solid fa-bullhorn"></i></span>
+        <p>Emotion recognition system</p>
+      </div>
+      <div style="visibility:hidden ;" class="third-building second-things">
+        <span><i class="fa-solid fa-bullhorn"></i></span>
+           <p>Handwriting recognition <br> system using Cognitive <br> Vision</p>
+      </div>
+  </div>
+        
+         </div>
+
+
+         <!-- ============================diagram=============== -->
+
+   <div class="diagram">
+      <h2>Diagram</h2>
+      <div class="hr-line"></div>
+      <div class="diagram-logo">
+          <img src="img/enjoy.jpeg" alt="not">
+      </div>
+   </div>
+
+   <!-- =============contact form==================== -->
+   <div class="container container-form">
+      <h2>Contact Us</h2>
+      <div class="hr-line">
+
+      </div>
+      <p>Please fill out the form below and we will get back to you as soon as possible</p>
+      <form action="mailto:asitmandal492@gmail.com" method="post" enctype="text/plain">
+        <input type="text" id="fname" name="name" placeholder="Enter Your Name">
+        <input type="email" id="lname" name="email" placeholder="Enter Your Email">
+        <input type="text" id="fname" name="phone" placeholder="Enter Your Phone no">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+
+      </form>
+      <div id="sovpcsccu0381664823603848" class="tawk-text-center
+			tawk-padding-small twiters"><a id="nh2v24scdbg81664823603848" tabindex="-1"></a><a id="x2dnbdp1h9ug1664823603848" href="https://www.tawk.to/?utm_source=tawk-messenger&amp;utm_medium=link&amp;utm_campaign=referral&amp;utm_term=5f9a6ad67f0a8e57c2d81a88" class="tawk-branding" style="color: white; font-size: 14px; font-weight: 400; text-decoration: none; padding: 0.5em;"><img src="https://embed.tawk.to/_s/v4/assets/images/Tawky_16x16.svg" style="margin: 0px 4px 0px 2px; display: inline-block; vertical-align: middle; width: 30px; float: left; color: white;"> Add free <b>live chat</b> to your site </a><a id="z228igfje3f81664823603848" tabindex="-1"></a><a id="n6vpdijou3t1664823603848" tabindex="-1"></a><a id="bfm4kddb20p81664823603848" tabindex="-1"></a></div>
+    </div>
      <!-- ========================footer=================== -->
 
      <footer>
@@ -132,4 +314,15 @@
          <p>© Copyright 2020 Anent Scientific Research & Advanced Technology Lab. All rights Reserved. | Created by Zovixo.com</p>
      </div>
 </body>
+
+<script>
+   function myFunction() {
+     var x = document.getElementById("myLinks");
+     if (x.style.display === "block") {
+       x.style.display = "none";
+     } else {
+       x.style.display = "block";
+     }
+   }
+   </script>
 </html>
