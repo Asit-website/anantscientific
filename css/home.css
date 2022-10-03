@@ -270,12 +270,11 @@ html{
    font-size: 14px;
    margin-top: 20px;
    font-weight: 200;
+   line-height: 22px;
 }
 
 .card:hover{
-    /* background-color: #ec3237; */
      background-color: #fae425;
-
 }
 .card:hover.card h3{
     color: black;
