@@ -9,6 +9,11 @@ body{
     overflow-x: hidden
 }
 
+html{
+    scroll-behavior: smooth;
+    transition: all 0.5s
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Playfair+Display&family=Poppins&family=Roboto&family=Roboto+Slab&display=swap');
 
 .navbar{
@@ -645,6 +650,13 @@ input[type=text], select, textarea {
    width: 200px;
    max-width: 100%;
    font-size: 16px;
+   opacity: 100%;
+  }
+  input{
+    opacity: 0.9;
+  }
+  textarea{
+    opacity: 0.9;
   }
   input:focus{
     outline: none;

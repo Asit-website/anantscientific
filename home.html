@@ -65,6 +65,22 @@
     border-radius: 50px;
 
 }
+.whatsapp{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 15px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+  }
+  .my-float{
+    margin-top: 10px;
+  }
 
 @media only screen and (max-width:773px){
    .topnav{
@@ -74,6 +90,9 @@
 </style>
 
 <body>
+   <a target="_blank" href="https://api.whatsapp.com/send/?phone=+919810507600&amp;text= hi" class="whatsapp">
+      <i  class="fa-brands fa-whatsapp my-float"></i>
+      </a>
      <nav class="navbar">
         <div class="first-nav">
             <span><i class="fa-solid fa-location-dot"></i></span>
@@ -91,27 +110,27 @@
 
      <header class="head">
          <div class="logo">
-            <img src="img/anantlogo.jpg" alt="anant">
+            <a href="#homi"><img src="img/anantlogo.jpg" alt="anant"></a>
          </div>
 
          <div class="second-head">
            <ul class="ulfor">
-            <li><a href="">Home</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Diagram</a></li>
-            <li><a href="">Contact us</a></li>
+            <li><a href="#homi">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#dia">Diagram</a></li>
+            <li><a href="#contact">Contact us</a></li>
            </ul>
          </div>
      </header>
      <div class="topnav">
-      <a href="#home" class="active"><img class="mobile-logo" src="img/anantlogo.jpg" alt=""></a>
+      <a href="#homi" class="active"><img class="mobile-logo" src="img/anantlogo.jpg" alt=""></a>
       <div id="myLinks">
-        <a href="#news">Home</a>
-        <a href="#contact">About us</a>
-        <a href="#about">Services</a>
-        <a href="#about">Diagram</a>
-        <a href="#about">Contact us</a>
+        <a href="#homi">Home</a>
+        <a href="#about">About us</a>
+        <a href="#service">Services</a>
+        <a href="#dia">Diagram</a>
+        <a href="#contact">Contact us</a>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
@@ -119,15 +138,15 @@
     </div>
     
 
-     <div class="home-section">
+     <div id="homi" class="home-section">
         <h2 class="home-heading animate__animated animate__zoomIn animate__infinite infinite ">Welcome to our website!!!!</h2>
         <p class="home-para">We are currently researching various applications of science and technology with respect to neurotechnologies & cognitive sciences</p>
         <div class="home-btn">
-            <button>Learn more</button>
+            <a href="#about"><button>Learn more</button></a>
         </div>
      </div>
 
-     <div class="about-section">
+     <div id="about" class="about-section">
           <div class="card-section">
              <div class="card">
                 <div class="img">
@@ -154,7 +173,7 @@
      </div>
 
      <!-- =========================our service page================== -->
-         <div class="services">
+         <div id="service" class="services">
             <h2>Our Services</h2>
             <div class="hr-line"></div>
             <div class="service-para">
@@ -241,7 +260,7 @@
 
          <!-- ============================diagram=============== -->
 
-   <div class="diagram">
+   <div id="dia" class="diagram">
       <h2>Diagram</h2>
       <div class="hr-line"></div>
       <div class="diagram-logo">
@@ -250,7 +269,7 @@
    </div>
 
    <!-- =============contact form==================== -->
-   <div class="container container-form">
+   <div id="contact" class="container container-form">
       <h2>Contact Us</h2>
       <div class="hr-line">
 
@@ -291,11 +310,11 @@
         <div class="second-footer">
                 <h2>Quick Links</h2>
                 <div class="para-foot">
-                    <a href=""><p>Home</p></a>
-                    <a href=""><p>About Us</p></a>
-                    <a href=""><p>Services</p></a>
-                    <a href=""><p>Diagram</p></a>
-                    <a href=""><p>Contact Us</p></a>
+                    <a href="#homi"><p>Home</p></a>
+                    <a href="#about"><p>About Us</p></a>
+                    <a href="#service"><p>Services</p></a>
+                    <a href="#dia"><p>Diagram</p></a>
+                    <a href="#contact"><p>Contact Us</p></a>
                 </div>
         </div>
         <div class="third-footer">
